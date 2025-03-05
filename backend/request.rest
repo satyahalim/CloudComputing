@@ -1,0 +1,27 @@
+
+//NOTES
+###
+GET http://localhost:5000/notes
+
+###
+POST http://localhost:5000/notes
+Content-Type: application/json
+
+{
+  "title": "meong",
+  "writer" : "keyrana",
+  "date":"2025-01-01",
+  "content":" kalau boleh tau nih, gw pun juga gangerti mau gmn lagi tp klo dipaksain"
+}
+
+###
+PUT http://localhost:5000/edit-notes/3
+Content-Type: application/json
+
+{
+  "title":"hohoho",
+  "content":"EH ANJING GW UDH GANGERTI LAGI DAH"
+}
+
+###
+DELETE http://localhost:5000/delete-notes/1
